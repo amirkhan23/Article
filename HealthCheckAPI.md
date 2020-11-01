@@ -36,7 +36,8 @@ function mySQLHealthStatus(): Promise<boolean> {
         }
     });
 ```
-> mySQLHealthStatus() Method check the health of MySQL by run  **"SELECT 1"** query.
+> mySQLHealthStatus() Method check the health of MySQL by run the **"SELECT 1"** query.
+> 
 > **if** OUTPUT is **1(ONE)** return **true**  
 > **else** return **false**.
 
@@ -64,6 +65,7 @@ function redisHealthStatus(): Promise<boolean> {
 }
 ```
 > redisHealthStatus() Method check the health of Redis by run  Redis **"PING"** CMD.
+> 
 >**if** OUTPUT is **"PONG"** return **true** 
 >**else** return **false**.
 
@@ -87,7 +89,8 @@ function rabbitMQHealthStatus(): Promise<boolean> {
     }
 }
 ```
-> rabbitMQHealthStatus() Method check the health of RabbitMQ by make a **connection** with RabbitMQ server, because there are many way to check health of RabbitMQ but these is simplest way to check health of RabbitMQ
+> rabbitMQHealthStatus() Method check the health of RabbitMQ by making a **connection** with RabbitMQ server because there are many ways to check the health of RabbitMQ but this is simplest way to check the health of RabbitMQ.
+> 
 >**if** there is no error in connection making return **true** 
 >**else** return **false**.
 
